@@ -3,7 +3,7 @@
 * @Date:   2017-03-16 15:58:51
 * @Email:  wj77998@qq.com
 * @Last Modified by:   wj77998
-* @Last Modified time: 2017-03-21 19:02:22
+* @Last Modified time: 2017-06-05 15:09:34
 */
 
 'use strict';
@@ -29,7 +29,7 @@ export default class Switch extends Component {
 		        	toggleView = {false}
 		        >
 {`
-	import { TntSwiper } from 'tnt-ui'
+	import { TntSwitch } from 'tnt-ui'
 	\n
 	<TntSwitch 
 		disabled: PropTypes.bool, //只读

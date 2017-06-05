@@ -3,18 +3,13 @@
 * @Date:   2017-03-16 15:44:37
 * @Email:  wj77998@qq.com
 * @Last Modified by:   wj77998
-* @Last Modified time: 2017-06-05 16:04:59
+* @Last Modified time: 2017-06-05 15:58:37
 */
 
 'use strict';
-/*import React from 'react'
+import React from 'react'
 import NavList from './navList'
 
-
-
-
-
-console.log();
 
 let childRoutes = [{ path: 'home' , getComponents(location, callback) {
     require.ensure([], function (require) {
@@ -44,11 +39,4 @@ const routes = {
   },
   childRoutes: childRoutes
 }
-
-if(__DEBUG__){
-
-}else{
-
-}*/
-
-export default __DEBUG__ ? require('./router-dev')["default"] : require('./router-pro')["default"]
+export default routes

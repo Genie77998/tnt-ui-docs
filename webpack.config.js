@@ -10,7 +10,8 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'static'),
         publicPath: './',
-        filename: 'build.js'
+        filename: '[name]_[chunkhash:5].js',
+        chunkFilename: '[name]_[chunkhash:5].js'
     },
     module: {
         loaders: [{
@@ -77,6 +78,10 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             prettyPrint: "prettify"
-        })
+        }),
+        new webpack.DefinePlugin({
+            // definePlugin 接收字符串插入到代码当中, 所以你需要的话可以写上 JS 的字符串
+            '__DEBUG__': false,
+        }),
     ]
 };
