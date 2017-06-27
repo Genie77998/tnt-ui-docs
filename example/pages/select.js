@@ -3,7 +3,7 @@
 * @Date:   2017-03-16 15:58:51
 * @Email:  wj77998@qq.com
 * @Last Modified by:   wj77998
-* @Last Modified time: 2017-03-21 18:55:58
+* @Last Modified time: 2017-06-27 10:12:59
 */
 
 'use strict';
@@ -36,7 +36,7 @@ class Lover extends React.Component {
 
 	}
 	onClick(){
-		this.refs.slectPro.show();
+		this.refs["slectPro"].show();
 	}
 	render(){
 		const { onClick  , onSelect , onChange} = this;
@@ -597,7 +597,7 @@ class Region extends React.Component {
             defaultValue : _defaultValue,  
             defaultData : [province,city,area]
         });
-		this.refs.slectPro.show();
+		this.refs["slectPro"].show();
 	}
 	render(){
 		const { onClick  , onSelect , onChange} = this;
@@ -692,7 +692,7 @@ export default class Select extends Component {
 
 		}
 		onClick(){
-			this.refs.slectPro.show();
+			this.refs["slectPro"].show();
 		}
 		render(){
 			const { onClick  , onSelect , onChange} = this;
@@ -1270,7 +1270,7 @@ export default class Select extends Component {
                 defaultValue : _defaultValue,  
                 defaultData : [province,city,area]
             });
-            this.refs.slectPro.show();
+            this.refs["slectPro"].show();
         }
         render(){
             const { onClick  , onSelect , onChange} = this;

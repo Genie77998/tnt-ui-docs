@@ -3,7 +3,7 @@
 * @Date:   2017-03-16 15:58:51
 * @Email:  wj77998@qq.com
 * @Last Modified by:   wj77998
-* @Last Modified time: 2017-03-21 18:56:47
+* @Last Modified time: 2017-06-27 10:13:24
 */
 
 'use strict';
@@ -71,13 +71,13 @@ export default class Swiper extends Component {
 					/>
 					<button
 						onClick={()=>{
-							this.refs.swiper.sliderTo(0)
+							this.refs["swiper"].sliderTo(0)
 						}}
 					>跳转至第一页</button>
 					<p/>
 					<button
 						onClick={()=>{
-							this.refs.swiper.sliderTo(-1)
+							this.refs["swiper"].sliderTo(-1)
 						}}
 					>跳转至最后一页</button>
 				</div>
@@ -104,12 +104,12 @@ export default class Swiper extends Component {
 	/>
 	<button
 		onClick={()=>{
-			this.refs.swiper.sliderTo(0)
+			this.refs["swiper"].sliderTo(0)
 		}}
 	>跳转至第一页</button>
 	<button
 		onClick={()=>{
-			this.refs.swiper.sliderTo(-1)
+			this.refs["swiper"].sliderTo(-1)
 		}}
 	>跳转至最后一页</button>
 `}
